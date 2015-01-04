@@ -1,10 +1,10 @@
 package tdd2;
 
-public class WasRun 
+public class WasRun extends TestCase
 {
 	private boolean wasRun;
-	public WasRun() {
-		super();
+	public WasRun(String name) {
+		super(name);
 	}
 	public boolean wasRun() {
 		return wasRun;

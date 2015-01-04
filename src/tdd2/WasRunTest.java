@@ -8,9 +8,10 @@ public class WasRunTest {
 
 	@Test
 	public void testWasRunCalled() {
-		WasRun wasRun=new WasRun();
-		wasRun.testMethod();
-		assertEquals(true, wasRun.wasRun());
+		WasRun wasRun=new WasRun("testMethod");
+		assertFalse(wasRun.wasRun());
+		wasRun.run();
+		assertTrue(wasRun.wasRun());
 	}
 
 }
